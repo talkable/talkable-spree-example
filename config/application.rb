@@ -8,7 +8,7 @@ Bundler.require(*Rails.groups)
 
 module TalkableSpreeExample
   class Application < Rails::Application
-    
+
     config.to_prepare do
       # Load application's model / class decorators
       Dir.glob(File.join(File.dirname(__FILE__), "../app/**/*_decorator*.rb")) do |c|
@@ -20,6 +20,8 @@ module TalkableSpreeExample
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
     end
+
+    config.middleware.use Talkable::Middleware
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/talkable/talkable-ruby.git
+  revision: 2e51cf74ee627072d1c174dccd1a874be6024aec
+  branch: master
+  specs:
+    talkable (0.0.0)
+      furi (~> 0.2)
+      rack (>= 1.5.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -101,6 +110,7 @@ GEM
       railties (>= 3.2, < 5.1)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
+    furi (0.2.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     highline (1.6.21)
@@ -329,6 +339,7 @@ DEPENDENCIES
   spree_gateway (~> 3.1.0)
   spring
   sqlite3
+  talkable!
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

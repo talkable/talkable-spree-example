@@ -28,6 +28,9 @@ gem 'spree', '~> 3.1.0'
 gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_gateway', '~> 3.1.0'
 
+# Talkable referral platform
+gem 'talkable', github: 'talkable/talkable-ruby', branch: 'master'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
