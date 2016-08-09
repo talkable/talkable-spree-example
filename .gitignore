@@ -18,3 +18,5 @@
 
 .ruby-version
 .ruby-gemset
+.env
+Procfile
