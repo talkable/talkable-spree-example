@@ -34,6 +34,9 @@ gem 'talkable', github: 'talkable/talkable-ruby', branch: 'master'
 # For Heroku logs
 gem 'rails_12factor', group: :production
 
+# Call 'byebug' anywhere in the code to stop execution and get a debugger console
+gem 'byebug', require: false
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -46,8 +49,6 @@ gem 'rails_12factor', group: :production
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3' # `pg` gem is used on heroku
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
 end
 
 group :development do

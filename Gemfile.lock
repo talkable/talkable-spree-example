@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/talkable/talkable-ruby.git
-  revision: 2e51cf74ee627072d1c174dccd1a874be6024aec
+  revision: 26d4a4e78cd62dcd46a318fab3e4b8ad8c72c100
   branch: master
   specs:
     talkable (0.0.0)
