@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/spree-contrib/spree_static_content.git
+  revision: 913693113155a6f2ca281223f22f7b61a6ec9002
+  branch: 3-1-stable
+  specs:
+    spree_static_content (3.1.0)
+      spree_core (~> 3.1.0.beta)
+
+GIT
   remote: git://github.com/talkable/talkable-ruby.git
   revision: 26d4a4e78cd62dcd46a318fab3e4b8ad8c72c100
   branch: master
@@ -345,6 +353,7 @@ DEPENDENCIES
   spree (~> 3.1.0)
   spree_auth_devise (~> 3.1.0)
   spree_gateway (~> 3.1.0)
+  spree_static_content!
   spring
   sqlite3
   talkable!
