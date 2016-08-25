@@ -13,8 +13,6 @@ Spree::Order.class_eval do
     Talkable::API::Origin.create(Talkable::API::Origin::PURCHASE, talkable_params)
   end
 
-  protected
-
   def talkable_params
     {
       email: email,
@@ -43,5 +41,19 @@ Spree::Order.class_eval do
         }
       end
     }
+  end
+end
+
+Spree::OrdersController.class_eval do
+  skip_before_action :load_talkable_offer, only: [:show]
+
+  alias_method :original_show, :show
+
+  def show
+    original_show
+    origin = Talkable.register_purchase(
+      @order.talkable_params.merge(campaign_tags: 'post-purchase')
+    )
+    @offer ||= origin&.offer
   end
 end
