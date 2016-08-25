@@ -8,11 +8,12 @@ GIT
 
 GIT
   remote: git://github.com/talkable/talkable-ruby.git
-  revision: 26d4a4e78cd62dcd46a318fab3e4b8ad8c72c100
+  revision: c3ecf2d1aa4a75b164267866d8b8cf7e8ce17ec6
   branch: master
   specs:
     talkable (0.0.0)
       furi (~> 0.2)
+      hashie (~> 3.4)
       rack (>= 1.5.2)
 
 GEM
@@ -121,6 +122,7 @@ GEM
     furi (0.2.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
+    hashie (3.4.4)
     highline (1.6.21)
     htmlentities (4.3.4)
     i18n (0.7.0)
