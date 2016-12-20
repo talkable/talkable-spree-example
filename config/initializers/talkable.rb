@@ -51,9 +51,7 @@ Spree::OrdersController.class_eval do
 
   def show
     original_show
-    origin = Talkable.register_purchase(
-      @order.talkable_params.merge(campaign_tags: 'post-purchase')
-    )
+    origin = Talkable.register_purchase(@order.talkable_params)
     @offer ||= origin&.offer
   end
 end

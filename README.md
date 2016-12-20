@@ -1,6 +1,6 @@
 ## README
 
-This README has step by step instructions how to integrate talkable referral platform into your `spree` store.
+This README has step by step instructions how to integrate Talkable referral platform into your `spree` store.
 
 ## Getting started
 
@@ -11,12 +11,6 @@ gem 'talkable'
 ```
 
 Run the `bundle install` command to install it.
-
-Next, you need to add Talkable middleware into your `application.rb` file:
-
-```ruby
-config.middleware.use Talkable::Middleware
-```
 
 Create a file `config/initializers/talkable.rb` and configure gem:
 
@@ -76,4 +70,3 @@ Spree::Order.class_eval do
   end
 end
 ```
-

@@ -9,10 +9,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def load_talkable_offer
-    origin = Talkable.register_affiliate_member(
-      email: current_spree_user&.email,
-      campaign_tags: (request.path == '/invite' ? 'invite' : 'popup'),
-    )
+    origin = Talkable.register_affiliate_member(email: current_spree_user&.email)
     @offer ||= origin&.offer
   end
 

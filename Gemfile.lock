@@ -8,10 +8,10 @@ GIT
 
 GIT
   remote: git://github.com/talkable/talkable-ruby.git
-  revision: c3ecf2d1aa4a75b164267866d8b8cf7e8ce17ec6
+  revision: 732efcd2f1d62d7ab5adf6ac09cbb0422ae7d4bc
   branch: master
   specs:
-    talkable (0.0.0)
+    talkable (1.0.0)
       furi (~> 0.2)
       hashie (~> 3.4)
       rack (>= 1.5.2)
@@ -119,10 +119,10 @@ GEM
       railties (>= 3.2, < 5.1)
     friendly_id (5.1.0)
       activerecord (>= 4.0.0)
-    furi (0.2.0)
+    furi (0.2.1)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
-    hashie (3.4.4)
+    hashie (3.4.6)
     highline (1.6.21)
     htmlentities (4.3.4)
     i18n (0.7.0)
@@ -367,4 +367,4 @@ RUBY VERSION
    ruby 2.3.0p0
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
