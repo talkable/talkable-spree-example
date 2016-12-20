@@ -3,8 +3,6 @@ ruby '2.3.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-# Use postgress as the database for Active Record on heroku
-gem 'pg', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -32,9 +30,6 @@ gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch
 # Talkable referral platform
 gem 'talkable', github: 'talkable/talkable-ruby', branch: 'master'
 
-# For Heroku logs
-gem 'rails_12factor', group: :production
-
 # Call 'byebug' anywhere in the code to stop execution and get a debugger console
 gem 'byebug', require: false
 
@@ -60,3 +55,10 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  # Use postgres as the database for Active Record on Heroku
+  gem 'pg'
+
+  # For Heroku logs
+  gem 'rails_12factor'
+end
